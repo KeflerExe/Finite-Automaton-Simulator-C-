@@ -45,8 +45,8 @@ first numbers starting at 0.
 • Next, for each of the transitions, and using spaces in
 white as separators, the following information will be detailed:
 
-◦ Input symbol necessary for the transition to occur. I'll stop-
-present the empty string (not consuming input symbol) will be used
+◦ Input symbol necessary for the transition to occur. To 
+represent the empty string (not consuming input symbol) will be used
 the character &
 
 ◦ Destination state of the transition
