@@ -37,13 +37,18 @@ the following numbers, separated from each other by white spaces:
 • State identification number. The states of the automaton will be represented
 through natural numbers. The numbering of the states will correspond to the
 first numbers starting at 0.
+
 • A 1 if it is an acceptance state and a 0 otherwise.
+
 • Number of transitions that the state has.
+
 • Next, for each of the transitions, and using spaces in
 white as separators, the following information will be detailed:
+
 ◦ Input symbol necessary for the transition to occur. I'll stop-
 present the empty string (not consuming input symbol) will be used
 the character &
+
 ◦ Destination state of the transition
 
 ![Finite Automaton](automaton.png)
