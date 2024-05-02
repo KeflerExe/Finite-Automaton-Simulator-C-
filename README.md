@@ -70,6 +70,11 @@ would specify as follows:
 
 3 0 2 0 2 1 3
 
+If the automaton has been created correctly, then it will proceed to read the
+strings contained in the input .txt file. For each string in the input file
+the behavior of the automaton is simulated to determine if said chain of
+input is accepted or rejected by the automaton.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
