@@ -46,16 +46,23 @@ present the empty string (not consuming input symbol) will be used
 the character &
 ◦ Destination state of the transition
 
-![alt text](https://ibb.co/Rpc0TP2)
+![Finite Automaton](automaton.png)
 
 Following the .fa file format described above, the DFA seen on the image above
 would specify as follows:
+
 0 1
+
 4
+
 0
+
 0 0 2 0 2 1 1
+
 1 1 2 0 1 1 1
+
 2 0 2 0 1 1 3
+
 3 0 2 0 2 1 3
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
