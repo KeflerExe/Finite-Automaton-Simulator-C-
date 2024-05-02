@@ -6,18 +6,57 @@
 ## About The Project
 
 
-In different fields of science there is a need to work with very big, or very small  numerical values.
-With this program im implementing data types in C++ to handle 
-very large numeric values, exceeding the representation range of the defined data types
-in standard language. To do this, the generic data type BigInt<size_t Base> is defined
-which represents integers using positional notation. In this numbering system, the value of a digit depends on its relative position and the base, which determines the number of
-digits needed to write any number. By default, the decimal system will be used
-(base 10), although it is also common to use the binary (base 2), octal (base 8) and hexadecimal (base 16).
+This program written in C++ reads from
+a file that contains the specifications of a finite automaton (FA) and then simulates the
+behavior of the automaton for a series of strings that are supplied as input.
+The program should be run as:
 
-The representation range of the BigInt<size_t Base> data type encompasses any integer, positive or negative, that can be stored in machine memory.
-That is, the maximum range is limited by the maximum size that the system allows for the data structure where the digits are stored.
+```
+./automata_simulator input.fa input.txt
+```
 
-Using the BigInt<Base> data type, the program implements a calculator for expressions in inverse Polish notation.
+Where the two parameters passed on the command line correspond in this order
+with:
+A text file containing the specification of a finite automaton.
+A text file with a .txt extension containing a series of strings (one
+string by line) on the alphabet of the automaton specified in the first of the
+files.
+
+The finite automaton will be defined in a text file with the extension .fa. The files
+.fa should have the following format:
+
+Line 1: Alphabet symbols separated by spaces.
+
+Line 2: Total number of states of the automaton.
+
+Line 3: PLC startup status.
+
+Next there will be a line for each of the states. Each line will contain
+the following numbers, separated from each other by white spaces:
+
+• State identification number. The states of the automaton will be represented
+through natural numbers. The numbering of the states will correspond to the
+first numbers starting at 0.
+• A 1 if it is an acceptance state and a 0 otherwise.
+• Number of transitions that the state has.
+• Next, for each of the transitions, and using spaces in
+white as separators, the following information will be detailed:
+◦ Input symbol necessary for the transition to occur. I'll stop-
+present the empty string (not consuming input symbol) will be used
+the character &
+◦ Destination state of the transition
+
+![alt text](https://ibb.co/Rpc0TP2)
+
+Following the .fa file format described above, the DFA seen on the image above
+would specify as follows:
+0 1
+4
+0
+0 0 2 0 2 1 1
+1 1 2 0 1 1 1
+2 0 2 0 1 1 3
+3 0 2 0 2 1 3
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
